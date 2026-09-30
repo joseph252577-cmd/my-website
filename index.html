@@ -6,39 +6,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Title Tag (SEO Optimized with Target Keywords) -->
-    <title>Minimalist Wooden Aesthetics & Interior Furniture Design</title>
+    <!-- Title Tag -->
+    <title>Minimalist Wooden Aesthetics & Architectural Psychology</title>
     
     <!-- Search Engine Meta Tags -->
-    <meta name="title" content="Minimalist Wooden Aesthetics & Interior Furniture Design">
-    <meta name="description" content="Explore minimalist wood furniture design, modern interior aesthetics, and sleek black, white, and wooden handcrafted decor for minimalist living spaces.">
-    <meta name="keywords" content="minimalist wood design, minimalist wood furniture design, minimalist black white wood interior design, white and wood aesthetic, minimalist wooden aesthetics">
+    <meta name="title" content="Minimalist Wooden Aesthetics & Architectural Psychology">
+    <meta name="description" content="Exploring the cognitive benefits of minimalist interior design, biophilic wood aesthetics, and intentional spatial layouts for mental clarity.">
+    <meta name="keywords" content="minimalist wood design, spatial psychology, biophilic interior design, cognitive clarity architecture, minimalist living space">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.curatedcollectives.com/">
 
-    <!-- Social Media Preview Tags (Open Graph & Twitter) -->
+    <!-- Social Media Preview Tags -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.curatedcollectives.com/">
-    <meta property="og:title" content="Minimalist Wooden Aesthetics & Interior Furniture Design">
-    <meta property="og:description" content="Showcasing high-quality, minimal wooden craftsmanship and functional interior concepts.">
+    <meta property="og:title" content="Minimalist Wooden Aesthetics & Architectural Psychology">
+    <meta property="og:description" content="Spatial clarity, biophilic wood design, and environmental psychology for modern living.">
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="Minimalist Wooden Aesthetics & Interior Furniture Design">
-    <meta property="twitter:description" content="Showcasing high-quality, minimal wooden craftsmanship and functional interior concepts.">
 
-    <!-- Google Fonts for Modern Typography -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet">
 
-    <!-- CSS Embedded Styling -->
+    <!-- CSS Styling -->
     <style>
         :root {
-            --bg-color: #fcfcfc;
+            --bg-color: #f9f9fb;
             --card-bg: #ffffff;
-            --text-main: #1c1c1e;
-            --text-muted: #636366;
-            --border-color: #e5e5ea;
-            --shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            --text-main: #1d1d1f;
+            --text-muted: #6e6e73;
+            --accent-warm: #8e7d6b;
+            --border-color: #e2e2e7;
+            --shadow: 0 12px 32px rgba(0, 0, 0, 0.04);
+            --radius: 12px;
         }
 
         * {
@@ -56,32 +56,34 @@
         }
 
         .wrapper {
-            max-width: 1000px;
+            max-width: 1080px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 50px 20px;
         }
 
-        /* Header & Navigation */
+        /* Header Navigation */
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding-bottom: 25px;
             border-bottom: 1px solid var(--border-color);
-            margin-bottom: 40px;
+            margin-bottom: 45px;
         }
 
         header h1 {
             font-family: 'Playfair Display', serif;
             font-size: 1.8rem;
             font-weight: 600;
+            letter-spacing: -0.02em;
         }
 
         nav a {
             color: var(--text-muted);
             text-decoration: none;
-            margin-left: 20px;
+            margin-left: 24px;
             font-size: 0.95rem;
+            font-weight: 500;
             transition: color 0.2s ease;
         }
 
@@ -89,83 +91,151 @@
             color: var(--text-main);
         }
 
-        /* Hero Section */
+        /* Hero Banner Component */
         .hero {
             background-color: var(--card-bg);
-            padding: 50px 40px;
-            border-radius: 12px;
             border: 1px solid var(--border-color);
+            border-radius: var(--radius);
             box-shadow: var(--shadow);
-            margin-bottom: 40px;
+            overflow: hidden;
+            margin-bottom: 50px;
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+        }
+
+        .hero-img {
+            width: 100%;
+            height: 100%;
+            min-height: 380px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .hero-body {
+            padding: 45px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .tag {
+            display: inline-block;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--accent-warm);
+            font-weight: 600;
+            margin-bottom: 12px;
         }
 
         .hero h2 {
             font-family: 'Playfair Display', serif;
-            font-size: 2.2rem;
-            margin-bottom: 15px;
+            font-size: 2.1rem;
+            line-height: 1.25;
+            margin-bottom: 16px;
         }
 
         .hero p {
-            font-size: 1.05rem;
             color: var(--text-muted);
+            font-size: 1rem;
+            margin-bottom: 24px;
         }
 
-        /* Two-Column Picture Card Layout */
+        .yt-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: var(--text-main);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 22px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            width: fit-content;
+            transition: background-color 0.2s ease;
+        }
+
+        .yt-btn:hover {
+            background-color: #333336;
+        }
+
+        /* 2-Column Article Grid */
+        .grid-heading {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            margin-bottom: 25px;
+        }
+
         .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 25px;
-            margin-bottom: 40px;
+            margin-bottom: 50px;
         }
 
-        .picture-card {
+        .card {
             background-color: var(--card-bg);
             border: 1px solid var(--border-color);
-            border-radius: 10px;
+            border-radius: var(--radius);
             overflow: hidden;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-
-        .picture-card:hover {
-            transform: translateY(-4px);
             box-shadow: var(--shadow);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
         }
 
-        .picture-card img {
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 16px 36px rgba(0,0,0,0.07);
+        }
+
+        .card img {
             width: 100%;
-            height: 200px;
+            height: 240px;
             object-fit: cover;
             display: block;
-            background-color: #f0f0f2;
         }
 
         .card-content {
-            padding: 20px;
+            padding: 24px;
         }
 
         .card-content h3 {
             font-family: 'Playfair Display', serif;
-            font-size: 1.25rem;
-            margin-bottom: 8px;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
         }
 
         .card-content p {
-            font-size: 0.9rem;
+            font-size: 0.88rem;
             color: var(--text-muted);
-            margin-bottom: 12px;
+            margin-bottom: 14px;
         }
 
-        /* Footer Styling */
+        .citation-note {
+            font-size: 0.78rem;
+            color: #8e8e93;
+            border-top: 1px solid var(--border-color);
+            padding-top: 10px;
+            margin-top: 10px;
+        }
+
+        /* Footer */
         footer {
             text-align: center;
-            padding-top: 30px;
+            padding-top: 35px;
             border-top: 1px solid var(--border-color);
             color: var(--text-muted);
             font-size: 0.85rem;
-            margin-top: 40px;
+            margin-top: 50px;
         }
 
-        @media (max-width: 650px) {
+        @media (max-width: 850px) {
+            .hero {
+                grid-template-columns: 1fr;
+            }
+            .hero-img {
+                height: 260px;
+            }
             header {
                 flex-direction: column;
                 align-items: flex-start;
@@ -173,63 +243,96 @@
             }
             nav a {
                 margin-left: 0;
-                margin-right: 15px;
+                margin-right: 20px;
             }
         }
     </style>
 
-    <!-- Schema.org Structured Data -->
+    <!-- Schema.org Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "Curated Collectives",
       "url": "https://www.curatedcollectives.com/",
-      "description": "Minimalist wood furniture design, modern interior aesthetics, and sleek black, white, and wooden handcrafted decor."
+      "description": "Spatial psychology, biophilic wood design, and environmental clarity."
     }
     </script>
 </head>
 <body>
 
     <div class="wrapper">
-        <!-- Site Header & Navigation -->
+        <!-- Site Header -->
         <header>
             <h1>Curated Collectives</h1>
             <nav aria-label="Main Navigation">
                 <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="articles.html">Articles</a>
+                <a href="#psychology">Environmental Psychology</a>
+                <a href="#youtube">Video Series</a>
                 <a href="contact.html">Contact</a>
             </nav>
         </header>
 
-        <!-- Main Hero Section -->
         <main>
-            <section class="hero">
-                <h2>Minimalist Design & Spatial Utility</h2>
-                <p>Practical, high-quality minimalist decor, small-space layouts, and handcrafted wooden furniture design concepts tailored for modern homes.</p>
+            <!-- Hero Component -->
+            <section class="hero" id="youtube">
+                <img src="hero-living-room.jpg" alt="Minimalist living room with natural wood coffee table and beige couch" class="hero-img">
+                <div class="hero-body">
+                    <span class="tag">Cognitive Architecture</span>
+                    <h2>Designing Environments for Sustained Focus</h2>
+                    <p>Research in environmental psychology indicates that reduced visual complexity directly lowers physiological stress markers while sharpening focus. Our upcoming video series explores how spatial proportion and natural wood grain transform living environments.</p>
+                    <a href="https://www.youtube.com" target="_blank" rel="noopener" class="yt-btn">
+                        Watch Visual Narratives &rarr;
+                    </a>
+                </div>
             </section>
 
-            <!-- Approved Two-Column Card Grid -->
+            <h2 class="grid-heading" id="psychology">Spatial Harmony & Cognitive Principles</h2>
+
+            <!-- 4-Card Educational Grid -->
             <section class="gallery-grid">
                 
-                <!-- Card 1: Small-Space Living -->
-                <article class="picture-card">
-                    <img src="small-space-lahore.jpg" alt="Minimalist small room interior layout with modern wooden accents">
+                <!-- Card 1 -->
+                <article class="card">
+                    <img src="focus-desk-space.jpg" alt="Floating wooden desk and chair in a clean neutral room">
                     <div class="card-content">
-                        <h3>01. Small-Space Layouts</h3>
-                        <p>Smart layout strategies, clutter-free storage, and functional furniture positioning engineered specifically for urban homes and modern apartments.</p>
-                        <figcaption style="font-size: 0.8rem; color: #8e8e93;">Fig 1: Compact Room Spatial Optimization</figcaption>
+                        <span class="tag">Visual Ergonomics</span>
+                        <h3>Dedicated Work Isolation</h3>
+                        <p>Eliminating visual clutter around primary focus zones reduces peripheral cognitive load, allowing the brain to maintain deep focus state without visual fatigue.</p>
+                        <p class="citation-note">Ref: Applied Ergonomics & Spatial Attention</p>
                     </div>
                 </article>
 
-                <!-- Card 2: Local Sourcing & Budget Decor -->
-                <article class="picture-card">
-                    <img src="local-furniture-sourcing.jpg" alt="Locally sourced raw wood minimal furniture in a clean living room">
+                <!-- Card 2 -->
+                <article class="card">
+                    <img src="wall-credenza-art.jpg" alt="Dark wood sideboard console table mounted under artwork">
                     <div class="card-content">
-                        <h3>02. Local Sourcing & Budget Decor</h3>
-                        <p>How to source durable minimalist furniture, natural woods, and clean finishes affordably from local markets without relying on costly imports.</p>
-                        <figcaption style="font-size: 0.8rem; color: #8e8e93;">Fig 2: Budget Sourcing & Material Selection</figcaption>
+                        <span class="tag">Proportion & Grounding</span>
+                        <h3>Horizontal Anchoring</h3>
+                        <p>Low-profile wooden credenzas and horizontal architectural lines ground high-ceiling spaces, establishing visual balance and quiet spatial rhythm.</p>
+                        <p class="citation-note">Ref: Environmental Design & Perceptual Balance</p>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="card">
+                    <img src="minimal-studio-stool.jpg" alt="White stool next to a wooden ladder and potted plant">
+                    <div class="card-content">
+                        <span class="tag">Biophilic Synthesis</span>
+                        <h3>Raw Texture Balance</h3>
+                        <p>Combining clean matte walls with raw timber surfaces triggers autonomic relaxation responses, softening stark modern architecture with natural organic warmth.</p>
+                        <p class="citation-note">Ref: Journal of Wood Science & Stress Reduction</p>
+                    </div>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="card">
+                    <img src="dining-spatial-flow.jpg" alt="Minimalist dining room with round wooden table and chairs">
+                    <div class="card-content">
+                        <span class="tag">Circulation & Utility</span>
+                        <h3>Unobstructed Spatial Flow</h3>
+                        <p>Round furniture geometries in communal areas improve movement paths and spatial perception, making compact dining rooms feel open and spacious.</p>
+                        <p class="citation-note">Ref: Architecture & Behavioral Psychology</p>
                     </div>
                 </article>
 
